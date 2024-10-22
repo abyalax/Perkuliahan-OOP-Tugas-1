@@ -14,6 +14,10 @@ public class Pegawai {
         return nama;
     }
 
+    public String getPosisi() {
+        return posisi;
+    }
+
     public Long getGaji() {
         switch (this.posisi) {
             case "Designer":
@@ -33,9 +37,5 @@ public class Pegawai {
                 break;
         }
         return gaji;
-    }
-
-    public String getPosisi() {
-        return posisi;
     }
 }
